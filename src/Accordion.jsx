@@ -3,7 +3,7 @@ import AccordionItem from "./AccordionItem";
 
 
 const Accordion = ({ data }) => {
-  const [curOpen, setIsOpen] = useState(null);
+  const [curOpen, setCurOpen] = useState(null);
   return (
     <div className="accordion">
       {data.map((item, i) => (
@@ -13,7 +13,7 @@ const Accordion = ({ data }) => {
           title={item.title}
           text={item.text}
           curOpen={curOpen}
-          onOpen={setIsOpen}
+          onOpen={setCurOpen}
         />
       ))}
     </div>

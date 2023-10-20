@@ -5,6 +5,7 @@ const AccordionItem = ({ num, title, text,curOpen, onOpen }) => {
 
   const handleToggle = () => {
     // setIsOpen((isOpen) => !isOpen);
+    onOpen(num)
   };
 
   return (
