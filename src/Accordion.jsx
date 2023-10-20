@@ -14,7 +14,9 @@ const Accordion = ({ data }) => {
           text={item.text}
           curOpen={curOpen}
           onOpen={setCurOpen}
-        />
+        >
+          {item.text}
+        </AccordionItem>
       ))}
     </div>
   );
